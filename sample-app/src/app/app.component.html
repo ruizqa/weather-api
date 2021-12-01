@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+<div class="container section">
+  <h1 class="teal-text center">Dojo Weather Forecast</h1>
+  <div class="row">
+    <a class="col s2" [routerLink]="['/seattle']">Seattle WA</a>
+    <a class="col s2" [routerLink]="['/sanjose']">San Jose CA</a>
+    <a class="col s2" [routerLink]="['/burbank']">Burbank CA</a>
+    <a class="col s2" [routerLink]="['/dallas']">Dallas TX</a>
+    <a class="col s2" [routerLink]="['/washington']">Washington D.C</a>
+    <a class="col s2" [routerLink]="['/chicago']">Chicago IL</a>
+  </div>
+
+  <div class="row">
+    <router-outlet></router-outlet> 
+  </div>
+
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>            
+</body>
+</html>
